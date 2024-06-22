@@ -53,6 +53,7 @@ button{
     line-height: 24px;
     text-align: left;
     cursor: pointer;
+    transition: 0.15s;
 
 }
 hr{
@@ -78,4 +79,14 @@ font-weight: 500;
 line-height: 32px;
 color: #55F991; 
 margin-left: 24px;
+transition:0.15s;
+}
+.div-1:hover , .div-2:hover {
+    background-color: #55F991;
+    color: #273549;
+}
+.div-1:active , .div-2:active , button:active{
+    background-color: #55F991;
+    color: #273549;
+    transform: scale(0.95);
 }
