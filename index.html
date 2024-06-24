@@ -12,7 +12,22 @@
         <hr>
         <div class="div-1" id="password1-el" onclick="copy1()"></div>
         <div class="div-2" id="password2-el" onclick="copy2()"></div>
-       
+        <div class="popup" id="popup-el">
+            <h2>Customize your password</h2>
+            <label for="length-el">Password length:</label>
+            <input type="number" id="length-el" min="4" max="32" value="4">
+            <div>
+                <input type="checkbox" id="include-numbers-el" >
+                <label for="include-numbers-el">Include numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="include-symbols-el" >
+                <label for="include-symbols-el">Include symbols</label>
+            </div>
+            <button onclick="sumit()">sumit</button>
+            <button onclick="reset()">reset</button>
+        </div>
+        <button id="settings" onclick="settings()"><img src="C:\Users\NanoChip\Desktop\coding projects\password-generator\icons8-settings-30.png" alt="" height="27px"></button>
         <script src="index.js"></script>
     </body>
 </html>
