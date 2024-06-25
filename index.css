@@ -1,214 +1,232 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    width: 550px;
-    height: 550px;
-    top: 64px;
-    left: 642px;
-    padding-left: 52px;
-    background: #1F2937;
-    padding-top: 90px;
-}
-h1{
-    margin: 0px;
-    font-family: Karla;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 40px;
-    letter-spacing: -0.025em;
-    text-align: left;
-    color: #10B981;
-
-}
-.h1-1{
-    color: white;
-}
-p{
-font-family: Inter;
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-text-align: left;
-color: #D5D4D8;
-margin-top: 11px;
-}
-#btn-el{
-    width: 191px;
-    height: 42px;
-    top: 284px;
-    left: 52px;
-    padding: 9px 17px 9px 15px;
-    gap: 12px;
-    border-radius: 6px ;
-    opacity: 0px;
-    background-color: #10B981;
-    color: white;
-    border: none;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.15s;
-    box-shadow: 0 0 20px rgba(62, 212, 70, 0.2);
-}
-hr{
-    margin-top: 33px;
-    margin-bottom: 37px;
-    width: 500px;
-    top: 361px;
-    left: 52px;
-    border: 1px solid #2F3E53;
-}
-.div-1 , .div-2{
-    display: inline-block;
-    width: 211px;
-    height: 41px;
-    top: 396px;
-    left: 52px;
-    border-radius: 6px ;
-    background: #273549;
-    text-align: center;
-    font-family: Inter;
-font-size: 16px;
-font-weight: 500;
-line-height: 32px;
-color: #55F991; 
-margin-left: 24px;
-transition:0.15s;
-}
-.div-1:hover , .div-2:hover {
-    background-color: #55F991;
-    color: #273549;
-}
-.div-1:active , .div-2:active , button:active{
-    background-color: #55F991;
-    color: #273549;
-    transform: scale(0.95);
-}
-.popup {
-    position: fixed;
-    top: 0px; /* Adjust the bottom position as needed */
-    right: 0px; /* Adjust the left position as needed */
-    margin-top: 15px;
-    margin-right: 15px;
-    transform: translate(0, 0);
-    visibility: hidden;
-    width: 450px;
-    background-color: #273549;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Change the alignment to start from the left */
-    justify-content: flex-end; /* Change the alignment to end from the bottom */
-    z-index: 2;
-    opacity: 0.8;
-}
-.open-popup{
-    visibility: visible;
-}
-.close-popup{
-    visibility: hidden;
-}
-.popup h2 {
-    margin: 0;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
-    color: #D5D4D8;
-}
-
-.popup label {
-    display: inline;
-    margin-top: 10px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #ebebeb;
-}
-.popup input[type="text"],
-.popup input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    background-color: #334659;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #D5D4D8;
-    outline: none; /* Removes the default input outline */
-}
-
-.popup input[type="text"]:focus,
-.popup input[type="number"]:focus {
-    border: 2px solid #10B981; /* Adds a green border when the input is focused */
-}
-
-.popup input[type="text"]::placeholder,
-.popup input[type="number"]::placeholder {
-    color: #8898AA; /* Changes the placeholder text color */
-}
-
-.popup input[type="text"]:disabled,
-.popup input[type="number"]:disabled {
-    background-color: #445569; /* Changes the background color when the input is disabled */
-    color: #8898AA; /* Changes the text color when the input is disabled */
-}
-.popup button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    background-color: #10B981;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #D5D4D8;
-    cursor: pointer;
-    transition: 0.15s;
-}
-
-.popup button:hover {
-    background-color: #009444;
-}
-
-.popup button:active {
-    background-color: #009444;
-    transform: scale(0.95);
-}
-#settings {
-    position: fixed;
-    top: 20px; 
-    right: 20px;
-    transform: translate(0, 0);
-    height: 35px;
-    width: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1F2937;
-    border: 2px solid #10B981;
-    box-shadow: 0 0 20px rgba(62, 212, 70, 0.2);
-    transition: 0.15s;
-}
-#settings:hover{
-    box-shadow: 0 0 30px rgba(2, 247, 35, 0.664);
-    transform: scale(1.30);
-}
-#btn-el:hover{
-    box-shadow: 0 0 30px rgba(2, 247, 35, 0.664);
-    transform: scale(0.99);
-}
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            width: 550px;
+            height: 550px;
+            top: 64px;
+            left: 642px;
+            padding-left: 52px;
+            background: #1F2937;
+            padding-top: 90px;
+        }
+        h1{
+            margin: 0px;
+            font-family: Karla;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 40px;
+            letter-spacing: -0.025em;
+            text-align: left;
+            color: #10B981;
+        }
+        .h1-1{
+            color: white;
+        }
+        p{
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            color: #D5D4D8;
+            margin-top: 11px;
+        }
+        #btn-el{
+            width: 191px;
+            height: 42px;
+            top: 284px;
+            left: 52px;
+            padding: 9px 17px 9px 15px;
+            gap: 12px;
+            border-radius: 6px ;
+            opacity: 0px;
+            background-color: #10B981;
+            color: white;
+            border: none;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.15s;
+            box-shadow: 0 0 20px rgba(62, 212, 70, 0.2);
+        }
+        hr{
+            margin-top: 33px;
+            margin-bottom: 37px;
+            width: 500px;
+            top: 361px;
+            left: 52px;
+            border: 1px solid #2F3E53;
+        }
+        .div-1 , .div-2{
+            display: inline-block;
+            width: 211px;
+            height: 41px;
+            top: 396px;
+            left: 52px;
+            border-radius: 6px ;
+            background: #273549;
+            text-align: center;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 32px;
+            color: #55F991; 
+            margin-left: 24px;
+            transition:0.15s;
+        }
+        .div-1:hover , .div-2:hover {
+            background-color: #55F991;
+            color: #273549;
+        }
+        .div-1:active , .div-2:active , button:active{
+            background-color: #55F991;
+            color: #273549;
+            transform: scale(0.95);
+        }
+        .popup , .history{
+            position: fixed;
+            top: 0px; /* Adjust the bottom position as needed */
+            right: 0px; /* Adjust the left position as needed */
+            margin-top: 15px;
+            margin-right: 15px;
+            transform: translate(0, 0);
+            visibility: hidden;
+            width: 450px;
+            background-color: #273549;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Change the alignment to start from the left */
+            justify-content: flex-end; /* Change the alignment to end from the bottom */
+            z-index: 2;
+            opacity: 0.8;
+        }
+        .open-popup {
+            visibility: visible;
+        }
+        .close-popup , .close-history{
+            visibility: hidden;
+        }
+        .popup h2 , .history h2{
+            margin: 0;
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #D5D4D8;
+        }
+        
+        .popup label {
+            display: inline;
+            margin-top: 10px;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #ebebeb;
+        }
+        .popup input[type="text"],
+        .popup input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            background-color: #334659;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #D5D4D8;
+            outline: none; /* Removes the default input outline */
+        }
+        
+        .popup input[type="text"]:focus,
+        .popup input[type="number"]:focus {
+            border: 2px solid #10B981; /* Adds a green border when the input is focused */
+        }
+        
+        .popup input[type="text"]::placeholder,
+        .popup input[type="number"]::placeholder {
+            color: #8898AA; /* Changes the placeholder text color */
+        }
+        
+        .popup input[type="text"]:disabled,
+        .popup input[type="number"]:disabled {
+            background-color: #445569; /* Changes the background color when the input is disabled */
+            color: #8898AA; /* Changes the text color when the input is disabled */
+        }
+        .popup button , .history button{
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            background-color: #10B981;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.15;
+        }
+        
+        .popup button:hover {
+            background-color: #009444;
+        }
+        
+        .popup button:active {
+            background-color: #009444;
+            transform: scale(0.95);
+        }
+        #settings , #history-btn {
+            position: fixed;
+            top: 20px; 
+            right: 20px;
+            transform: translate(0, 0);
+            height: 35px;
+            width: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1F2937;
+            border: 2px solid #10B981;
+            box-shadow: 0 0 20px rgba(62, 212, 70, 0.2);
+            transition: 0.15s;
+        }
+        #settings:hover , #history-btn:hover{
+            box-shadow: 0 0 30px rgba(2, 247, 35, 0.664);
+            transform: scale(1.30);
+        }
+        #btn-el:hover{
+            box-shadow: 0 0 30px rgba(2, 247, 35, 0.664);
+            transform: scale(0.99);
+        }
+        #history-btn{
+            right: 80px;
+        }
+        .open-history{
+            visibility: visible;
+            opacity: 1;
+        }
+        .history ol{
+            list-style-type: decimal-leading-zero;
+            margin: 0;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #D5D4D8;
+        }
+        span{
+            color: #55F991;
+        }

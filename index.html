@@ -17,17 +17,30 @@
             <label for="length-el">Password length:</label>
             <input type="number" id="length-el" min="4" max="32" value="4">
             <div>
-                <input type="checkbox" id="include-numbers-el" >
+                <input type="checkbox" id="include-numbers-el" checked>
                 <label for="include-numbers-el">Include numbers</label>
             </div>
             <div>
-                <input type="checkbox" id="include-symbols-el" >
+                <input type="checkbox" id="include-symbols-el" checked>
                 <label for="include-symbols-el">Include symbols</label>
+            </div>
+            <div>
+                <input type="checkbox" id="include-letters-el" checked>
+                <label for="include-letters-el">Include letters</label>
             </div>
             <button onclick="sumit()">sumit</button>
             <button onclick="reset()">reset</button>
         </div>
-        <button id="settings" onclick="settings()"><img src="C:\Users\NanoChip\Desktop\coding projects\password-generator\icons8-settings-30.png" alt="" height="27px"></button>
+        <div class="history" id="history-el">
+            <h2>Your passwords</h2>
+            <ol id="passwords">
+                
+            </ol>
+            <button onclick="ccc()">Clear History</button>
+            <button onclick="cc()">Close History</button>
+        </div>
+        <button id="settings" onclick="settings()"><img src="icons8-settings-30.png" alt="" height="27px"></button>
+        <button id="history-btn" onclick="showHistory()"><img src="icons8-history-27.png" alt="" height="27px"></button>
         <script src="index.js"></script>
     </body>
 </html>
