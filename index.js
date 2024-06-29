@@ -87,7 +87,7 @@ function generate() {
 }
 
 function copy1() {
-    if (password1EL.textContent === "" || password1EL.textContent === "copied") {
+    if (password1EL.textContent === "" || password1EL.textContent === "copied" || password1EL  === "no password") {
         return;
     }
     navigator.clipboard.writeText(password1EL.textContent);
@@ -99,7 +99,7 @@ function copy1() {
 }
 
 function copy2() {
-    if (password2EL.textContent === "" || password2EL.textContent === "copied") {
+    if (password2EL.textContent === "" || password2EL.textContent === "copied" || password2EL === "no password") {
         return; // Do nothing if the password is empty or already copied
     }
     navigator.clipboard.writeText(password2EL.textContent);
