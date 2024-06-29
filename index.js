@@ -52,7 +52,7 @@ function sumit() {
     } else if (includeNumbers === true && includeSymbols === true && includeletters === false) {
         characters = numbers.concat(symbols);
     } else if (includeNumbers === false && includeSymbols === false && includeletters === false) {
-        characters = "";
+        characters = []
     }
 }
 
