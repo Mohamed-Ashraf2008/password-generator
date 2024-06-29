@@ -76,7 +76,7 @@ function collector() {
 }
 
 function generate() {
-    if(characters = []){
+    if(characters === []){
         password1EL.textContent = ("no password")
         password2EL.textContent = ("no password")
     }
