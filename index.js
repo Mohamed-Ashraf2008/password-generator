@@ -52,7 +52,7 @@ function sumit() {
     } else if (includeNumbers === true && includeSymbols === true && includeletters === false) {
         characters = numbers.concat(symbols);
     } else if (includeNumbers === false && includeSymbols === false && includeletters === false) {
-        characters = ""
+        characters = false
     }
 }
 
@@ -76,7 +76,7 @@ function collector() {
 }
 
 function generate() {
-    if(characters === ""){
+    if(characters === false){
         password1EL.textContent = ("no password")
         password2EL.textContent = ("no password")
     }
