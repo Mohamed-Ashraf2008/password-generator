@@ -55,6 +55,7 @@ function sumit() {
         characters = false
     }
     if(passwordLength > 20){
+        passwordLength = 20
         input.value = 20
         input.textContent = 20
     }
