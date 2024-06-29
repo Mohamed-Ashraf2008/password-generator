@@ -54,6 +54,10 @@ function sumit() {
     } else if (includeNumbers === false && includeSymbols === false && includeletters === false) {
         characters = false
     }
+    if(passwordLength > 20){
+        input.value = 20
+        input.textContent = 20
+    }
 }
 
 function random() {
