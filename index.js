@@ -76,8 +76,14 @@ function collector() {
 }
 
 function generate() {
+    if(characters = []){
+        password1EL.textContent = ("no password")
+        password2EL.textContent = ("no password")
+    }
+    else{
     password1EL.textContent = collector();
     password2EL.textContent = collector();
+    }
 }
 
 function copy1() {
