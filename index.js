@@ -83,7 +83,7 @@ function collector() {
 function generate(){
     cc()
     sumit()
-    if(characters === false){
+    if(characters === false || passwordLength === 0){
         password1EL.textContent = ("no password")
         password2EL.textContent = ("no password")
     }
