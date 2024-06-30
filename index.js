@@ -36,7 +36,6 @@ function sumit() {
     includeNumbers = includeNumbersEl.checked;
     includeSymbols = includeSymbolsEl.checked;
     includeletters = includelettersEl.checked;
-    popup.classList.remove("open-popup");
     if (includeNumbers === false && includeSymbols === false && includeletters === true) {
         characters = letters;
     } else if (includeNumbers === false && includeSymbols === true && includeletters === true) {
@@ -59,6 +58,7 @@ function sumit() {
         input.value = 20
         input.textContent = 20
     }
+    popup.classList.remove("open-popup")
 }
 
 function random() {
@@ -89,6 +89,8 @@ function generate() {
     password1EL.textContent = collector();
     password2EL.textContent = collector();
     }
+    sumit()
+    cc()
 }
 
 function copy1() {
