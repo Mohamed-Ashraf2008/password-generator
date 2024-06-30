@@ -80,7 +80,9 @@ function collector() {
     return result;
 }
 
-function generate() {
+function generate(){
+    cc()
+    sumit()
     if(characters === false){
         password1EL.textContent = ("no password")
         password2EL.textContent = ("no password")
@@ -89,8 +91,6 @@ function generate() {
     password1EL.textContent = collector();
     password2EL.textContent = collector();
     }
-    sumit()
-    cc()
 }
 
 function copy1() {
