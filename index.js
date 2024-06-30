@@ -58,6 +58,11 @@ function sumit() {
         input.value = 20
         input.textContent = 20
     }
+    else if(passwordLength > 1){
+        passwordLength = 1
+        input.value = 1
+        input.textContent = 1 
+    }
     popup.classList.remove("open-popup")
 }
 
@@ -83,7 +88,7 @@ function collector() {
 function generate(){
     cc()
     sumit()
-    if(characters === false || passwordLength === 0){
+    if(characters === false){
         password1EL.textContent = ("no password")
         password2EL.textContent = ("no password")
     }
