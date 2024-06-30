@@ -63,6 +63,9 @@ function sumit() {
         input.value = 1
         input.textContent = 1 
     }
+    else{
+        passwordLength = passwordLength
+    }
     popup.classList.remove("open-popup")
 }
 
